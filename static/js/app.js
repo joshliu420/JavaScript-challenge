@@ -15,6 +15,7 @@ tableData.forEach((report) => {
 
 //When select from dropdown menu, the display text change accordingly 
 var selectdropdown = d3.select("#selDataset");
+
 selectdropdown.on("change", function() {
   var value = selectdropdown.property("value");
   console.log(value)
@@ -46,7 +47,7 @@ selectdropdown.on("change", function() {
 
 });
 
-
+//Create a function to search the match data by Date, City and etc.
 function search() {
 
   //Remove the current table
